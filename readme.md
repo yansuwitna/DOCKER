@@ -66,3 +66,18 @@ Berikut adalah beberapa perintah dasar Docker yang sering digunakan:
 Ini adalah beberapa perintah dasar Docker yang dapat membantu Anda dalam mengelola dan menjalankan kontainer serta image menggunakan Docker CLI. Untuk informasi lebih lanjut tentang perintah-perintah ini dan opsi yang tersedia, Anda dapat menggunakan `docker --help` atau merujuk ke dokumentasi resmi Docker.
 
 # Pemecahan Masalah (C6)
+Docker, seperti halnya teknologi lainnya, dapat menghadapi beberapa masalah yang mungkin timbul selama penggunaannya. Berikut ini adalah beberapa masalah umum yang terkait dengan Docker dan beberapa pemecahan yang mungkin dapat membantu:
+
+1. Konfigurasi yang kompleks: Konfigurasi dan penggunaan Docker dapat menjadi kompleks, terutama jika Anda tidak memiliki pengalaman sebelumnya. Solusinya adalah mempelajari konsep dasar Docker dan memahami cara kerjanya dengan membaca dokumentasi resmi Docker dan mengikuti tutorial dan sumber daya yang tersedia secara online.
+
+2. Ketergantungan versi: Ketika menggunakan image atau kontainer Docker yang bergantung pada versi perangkat lunak tertentu, dapat muncul masalah jika versi tersebut tidak kompatibel dengan lingkungan Anda. Solusinya adalah memeriksa kecocokan versi dan mencari versi yang sesuai dengan lingkungan Anda. Juga, pastikan untuk melakukan pembaruan dan pemeliharaan secara teratur untuk menjaga kecocokan versi.
+
+3. Kinerja rendah: Dalam beberapa kasus, kinerja aplikasi dalam kontainer Docker mungkin lebih lambat dibandingkan dengan menjalankannya secara langsung di lingkungan host. Ini dapat disebabkan oleh penggunaan sumber daya yang tidak efisien atau konfigurasi yang tidak optimal. Solusinya adalah memantau penggunaan sumber daya dan melakukan penyesuaian konfigurasi, seperti mengalokasikan sumber daya yang cukup dan menggunakan teknik optimasi yang sesuai.
+
+4. Keamanan: Penggunaan Docker dapat menghadirkan tantangan keamanan, terutama jika tidak diatur dengan benar. Kontainer yang tidak aman atau terdapat kerentanan dapat menyebabkan masalah keamanan bagi aplikasi dan infrastruktur. Solusinya adalah menerapkan praktik keamanan yang baik, seperti memastikan image dan kontainer berasal dari sumber tepercaya, menggunakan mekanisme isolasi yang tepat, mengaktifkan otentikasi dan otorisasi, dan melakukan pembaruan keamanan secara teratur.
+
+5. Skalabilitas dan manajemen: Mengelola banyak kontainer dan orkestrasi dapat menjadi rumit. Solusinya adalah menggunakan alat pengelolaan kontainer seperti Docker Swarm atau Kubernetes yang menyediakan fitur skalabilitas, penjadwalan, dan manajemen yang lebih canggih. Dengan menggunakan alat ini, Anda dapat dengan mudah mengelola dan mengeksekusi kontainer dalam skala besar.
+
+6. Masalah jaringan: Kontainer Docker mungkin menghadapi masalah jaringan, seperti kesulitan dalam mengakses sumber daya jaringan eksternal atau antarkontainer. Solusinya adalah memastikan konfigurasi jaringan yang benar, menggunakan jaringan yang sesuai, mengatur penghubung jaringan yang tepat antara kontainer, dan mempertimbangkan penggunaan alat networking Docker seperti Docker Networking atau Kubernetes networking untuk manajemen jaringan yang lebih baik.
+
+Ketika menghadapi masalah dengan Docker, penting untuk merujuk pada dokumentasi resmi Docker, forum komunitas, dan sumber daya online untuk memperoleh bantuan dan saran yang
