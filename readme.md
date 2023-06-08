@@ -15,20 +15,26 @@ Docker menawarkan berbagai manfaat dan fungsi yang berkontribusi pada efisiensi 
 Docker dapat diterapkan dalam berbagai skenario dan lingkungan. Berikut adalah beberapa contoh penerapan Docker:
 
 1. Pengembangan dan Uji Aplikasi: Docker digunakan secara luas dalam siklus pengembangan perangkat lunak. Tim pengembang dapat mengemas aplikasi ke dalam kontainer Docker yang berisi semua dependensi yang diperlukan. Ini memastikan bahwa aplikasi berjalan dengan konsisten di seluruh tim pengembangan. Kontainer Docker juga memungkinkan pengujian aplikasi dalam lingkungan yang terisolasi, sehingga memudahkan identifikasi dan penyelesaian bug atau masalah lainnya sebelum aplikasi diterapkan ke lingkungan produksi.
-
 2. Virtualisasi Server: Docker dapat digunakan sebagai alternatif atau dalam kombinasi dengan virtualisasi server tradisional. Dalam lingkungan virtualisasi server, Docker memberikan tingkat isolasi yang lebih ringan dan penggunaan sumber daya yang lebih efisien. Dengan Docker, Anda dapat menjalankan banyak kontainer pada satu host fisik, memungkinkan penyebaran dan pengelolaan aplikasi yang lebih scalable.
-
 3. Orkestrasi dan Penjadwalan Kontainer: Docker Swarm dan Kubernetes adalah platform orkestrasi yang dapat digunakan untuk mengelola dan mengeksekusi kontainer Docker dalam lingkungan yang lebih kompleks. Dengan menggunakan alat-alat ini, Anda dapat mengelola cluster kontainer, melakukan penjadwalan otomatis, memantau kesehatan kontainer, dan menjaga ketersediaan aplikasi yang tinggi.
-
 4. Mikroservis dan Arsitektur Terdistribusi: Docker sering digunakan dalam konteks arsitektur mikroservis, di mana aplikasi dibangun sebagai sejumlah layanan terpisah yang dapat dijalankan dalam kontainer terisolasi. Setiap layanan dapat dikembangkan, diperbarui, dan dideploy secara independen. Docker memungkinkan skalabilitas dan manajemen layanan mikroservis yang efisien.
-
 5. Penyediaan Aplikasi di Cloud: Docker sangat cocok untuk menyebarkan aplikasi di lingkungan cloud. Dalam kombinasi dengan alat pengelolaan kontainer seperti Amazon Elastic Container Service (ECS) atau Google Kubernetes Engine (GKE), Docker memungkinkan deploy dan pengelolaan aplikasi secara otomatis dan elastis di lingkungan cloud yang scalable.
-
 6. CI/CD (Continuous Integration/Continuous Deployment): Docker dapat digunakan dalam alur kerja CI/CD untuk mempercepat pengiriman aplikasi. Dalam alur kerja ini, aplikasi dikemas ke dalam kontainer Docker yang kemudian diuji, dikirim, dan dideploy secara otomatis ke lingkungan produksi. Docker memastikan lingkungan yang konsisten di seluruh siklus pengembangan dan produksi, sehingga mengurangi risiko kesalahan dan meningkatkan keandalan aplikasi.
 
 Penerapan Docker dapat disesuaikan dengan kebutuhan spesifik organisasi atau proyek. Dalam banyak kasus, Docker memungkinkan pengembangan, pengujian, dan pengiriman aplikasi yang lebih cepat, lebih handal, dan lebih scalable.
 
 # Anilisis Kebutuhan (C4)
+Untuk menggunakan Docker, berikut adalah alat dan bahan yang diperlukan:
+
+1. Docker Engine: Docker Engine adalah mesin yang menjalankan dan mengelola kontainer Docker. Ini adalah komponen inti dari Docker dan harus diinstal di setiap host tempat Anda ingin menjalankan kontainer. Docker Engine tersedia untuk berbagai platform seperti Linux, Windows, dan macOS.
+2. Docker CLI: Docker Command Line Interface (CLI) adalah alat baris perintah yang digunakan untuk berinteraksi dengan Docker Engine. CLI memungkinkan Anda untuk membuat, mengelola, dan menjalankan kontainer Docker menggunakan perintah-perintah seperti build, run, stop, dan banyak lagi.
+3. Dockerfile: Dockerfile adalah file teks yang digunakan untuk menggambarkan langkah-langkah yang diperlukan untuk membangun sebuah kontainer Docker. File ini berisi instruksi untuk mengemas aplikasi, mendefinisikan dependensi, mengatur konfigurasi, dan mengatur lingkungan di dalam kontainer. Dockerfile digunakan dengan perintah docker build untuk membuat image kontainer.
+4. Docker Image: Docker Image adalah template yang berisi semua dependensi dan konfigurasi yang diperlukan untuk menjalankan kontainer. Image ini dibuat dari Dockerfile menggunakan perintah docker build. Image dapat disimpan dan didistribusikan di berbagai repositori seperti Docker Hub atau repositori Docker pribadi.
+5. Docker Registry: Docker Registry adalah tempat penyimpanan untuk menyimpan dan mendistribusikan Docker Image. Docker Hub adalah contoh registry publik yang menyediakan image yang sudah dibuat dan dapat digunakan. Anda juga dapat membuat registry pribadi untuk menyimpan image kustom atau internal bagi organisasi Anda.
+6. Docker Compose: Docker Compose adalah alat yang memungkinkan Anda mendefinisikan dan menjalankan aplikasi multi-kontainer menggunakan file konfigurasi YAML. Dengan Docker Compose, Anda dapat mengatur dependensi antara kontainer, mengkonfigurasi lingkungan, dan menjalankan seluruh aplikasi dengan satu perintah.
+7. Orkestrasi dan Manajemen Kontainer: Jika Anda berencana untuk mengelola kontainer dalam skala yang lebih besar atau dalam lingkungan yang kompleks, alat orkestrasi seperti Docker Swarm atau Kubernetes dapat digunakan. Ini memungkinkan Anda untuk mengelola dan mengeksekusi kontainer secara otomatis, mengelola penyebaran, penjadwalan, skala, pemantauan, dan pemulihan otomatis.
+
+
 
 # Langkah - Langkah (C5)
 
