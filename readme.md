@@ -37,5 +37,32 @@ Untuk menggunakan Docker, berikut adalah alat dan bahan yang diperlukan:
 
 
 # Langkah - Langkah (C5)
+Berikut adalah beberapa perintah dasar Docker yang sering digunakan:
+
+1. `docker run`: Perintah ini digunakan untuk menjalankan kontainer dari sebuah image. Contohnya: `docker run nama_image`.
+
+2. `docker build`: Perintah ini digunakan untuk membangun image dari Dockerfile. Contohnya: `docker build -t nama_image .` (titik di sini menunjukkan direktori tempat Dockerfile berada).
+
+3. `docker pull`: Perintah ini digunakan untuk mengunduh (mengambil) image dari Docker Registry ke lokal. Contohnya: `docker pull nama_image`.
+
+4. `docker stop`: Perintah ini digunakan untuk menghentikan kontainer yang sedang berjalan. Contohnya: `docker stop nama_kontainer`.
+
+5. `docker start`: Perintah ini digunakan untuk memulai kembali (start) kontainer yang telah dihentikan. Contohnya: `docker start nama_kontainer`.
+
+6. `docker restart`: Perintah ini digunakan untuk me-restart kontainer yang sedang berjalan. Contohnya: `docker restart nama_kontainer`.
+
+7. `docker ps`: Perintah ini digunakan untuk melihat daftar kontainer yang sedang berjalan. Contohnya: `docker ps`.
+
+8. `docker images`: Perintah ini digunakan untuk melihat daftar image yang tersedia di lokal. Contohnya: `docker images`.
+
+9. `docker rm`: Perintah ini digunakan untuk menghapus (remove) kontainer yang sudah tidak digunakan. Contohnya: `docker rm nama_kontainer`.
+
+10. `docker rmi`: Perintah ini digunakan untuk menghapus (remove) image yang tidak dibutuhkan lagi. Contohnya: `docker rmi nama_image`.
+
+11. `docker exec`: Perintah ini digunakan untuk menjalankan perintah di dalam kontainer yang sedang berjalan. Contohnya: `docker exec nama_kontainer perintah`.
+
+12. `docker logs`: Perintah ini digunakan untuk melihat log kontainer yang sedang berjalan. Contohnya: `docker logs nama_kontainer`.
+
+Ini adalah beberapa perintah dasar Docker yang dapat membantu Anda dalam mengelola dan menjalankan kontainer serta image menggunakan Docker CLI. Untuk informasi lebih lanjut tentang perintah-perintah ini dan opsi yang tersedia, Anda dapat menggunakan `docker --help` atau merujuk ke dokumentasi resmi Docker.
 
 # Pemecahan Masalah (C6)
