@@ -1,13 +1,37 @@
 ## Container
 
+### Membuat Container
+
+```bash
+docker container create --name <nama> -p <port akses>:<port docker> <image docker>
+```
+
+Contoh
+
+```bash
+docker container create --name server1 -p 8080:80 httpd
+```
+
 ### Melihat Container Yang Akif
 
 ```bash
 docker container ls
 ```
 
-### Melihat Semu Container
+### Melihat Semua Container
 
 ```bash
 docker container ls --all
+```
+
+### Menjalankan Container
+
+```bash
+docker container start <nama container>
+```
+
+Contoh
+
+```bash
+docker container start server1
 ```
