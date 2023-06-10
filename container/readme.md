@@ -35,3 +35,27 @@ Contoh
 ```bash
 docker container start server1
 ```
+
+### Stop Container
+
+```bash
+docker container stop <nama container>
+```
+
+Contoh
+
+```bash
+docker container stop server1
+```
+
+### Hapus Container
+
+```bash
+docker container remove <nama container>
+```
+
+Contoh
+
+```bash
+docker container remove server1
+```
