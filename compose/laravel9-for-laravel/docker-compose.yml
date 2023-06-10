@@ -1,0 +1,35 @@
+version: "3.7"
+
+services:
+  app:
+    image: "yansuwitna/php8.0.3-for-laravel"
+    container_name: laravel2
+    ports:
+      - "80:80"
+    networks:
+      - laravel2
+    volumes:
+      - ./html:/var/www/html
+    depends_on:
+      - mysql
+  mysql:
+    image: "mariadb:latest"
+    container_name: mariadb2
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: laravel
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - laravel2:/var/lib/mysql
+    networks:
+      - laravel2
+
+networks:
+  laravel2:
+    driver: bridge
+
+volumes:
+  laravel2:
+    name: laravel2
