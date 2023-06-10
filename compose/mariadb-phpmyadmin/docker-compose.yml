@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  mariadb:
+    container_name: mariadb1
+    image: mariadb
+    ports:
+      - 3306:3306
+    environment:
+      - MARIADB_ROOT_PASSWORD=123456
+    networks:
+      - jaringan1
+    volumes:
+      - vol1:/var/lib/mysql
+
+  phpmyadmin:
+    container_name: phpmyadmin1
+    image: phpmyadmin
+    ports:
+      - 8888:80
+    networks:
+      - jaringan1
+    depends_on:
+      - mariadb
+    environment:
+      - PMA_HOST=mariadb
+      - PMA_PORT=3306
+      - PMA_USER=root
+      - PMA_PASSWORD=123456
+
+networks:
+  jaringan1:
+    name: jaringan1
+
+volumes:
+  vol1:
+    name: vol1
